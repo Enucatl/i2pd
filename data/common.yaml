@@ -1,1 +1,12 @@
---- {}
+---
+i2pd::install::version: 'latest'
+i2pd::daemon::base::config_file: '/etc/i2pd/i2pd.conf'
+i2pd::daemon::base::user: 'i2pd'
+i2pd::daemon::base::group: 'i2pd'
+i2pd::daemon::base::log: 'file'
+i2pd::daemon::base::ipv4: true
+i2pd::daemon::base::ipv6: true
+i2pd::daemon::http::address: '127.0.0.1'
+i2pd::daemon::http::port: 7070
+i2pd::daemon::httpproxy::address: '127.0.0.1'
+i2pd::daemon::httpproxy::port: 4444

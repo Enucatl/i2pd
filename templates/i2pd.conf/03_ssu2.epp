@@ -1,0 +1,16 @@
+[ssu2]
+## Enable SSU2 transport (default = false for 2.43.0)
+# enabled = true
+<% unless $enabled =~ Undef { -%>
+enabled = <%= $enabled %>
+<% } -%>
+## Publish address in RouterInfo (default = true)
+# published = true
+<% unless $published =~ Undef { -%>
+published = <%= $published %>
+<% } -%>
+## Port for incoming connections (default is global port option value or port + 1 if SSU is enabled)
+# port = 4567
+<% unless $port =~ Undef { -%>
+port = <%= $port %>
+<% } -%>

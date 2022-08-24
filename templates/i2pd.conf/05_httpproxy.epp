@@ -1,0 +1,30 @@
+[httpproxy]
+## Uncomment and set to 'false' to disable HTTP Proxy
+# enabled = true
+<% unless $enabled =~ Undef { -%>
+enabled = <%= $enabled %>
+<% } -%>
+## Address and port service will listen on
+<% unless $address =~ Undef { -%>
+address = <%= $address %>
+<% } -%>
+<% unless $port =~ Undef { -%>
+port = <%= $port %>
+<% } -%>
+## Optional keys file for proxy local destination
+# keys = http-proxy-keys.dat
+<% unless $keys =~ Undef { -%>
+keys = <%= $keys %>
+<% } -%>
+## Enable address helper for adding .i2p domains with "jump URLs" (default: true)
+# addresshelper = true
+<% unless $addresshelper =~ Undef { -%>
+addresshelper = <%= $addresshelper %>
+<% } -%>
+## Address of a proxy server inside I2P, which is used to visit regular Internet
+# outproxy = http://false.i2p
+<% unless $outproxy =~ Undef { -%>
+outproxy = <%= $outproxy %>
+<% } -%>
+## httpproxy section also accepts I2CP parameters, like "inbound.length" etc.
+
