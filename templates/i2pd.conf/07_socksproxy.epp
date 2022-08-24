@@ -1,0 +1,32 @@
+[socksproxy]
+## Uncomment and set to 'false' to disable SOCKS Proxy
+# enabled = true
+<% unless $enabled =~ Undef { -%>
+enabled = <%= $enabled %>
+<% } -%>
+## Address and port service will listen on
+<% unless $address =~ Undef { -%>
+address = <%= $address %>
+<% } -%>
+<% unless $port =~ Undef { -%>
+port = <%= $port %>
+<% } -%>
+## Optional keys file for proxy local destination
+# keys = socks-proxy-keys.dat
+<% unless $keys =~ Undef { -%>
+keys = <%= $keys %>
+<% } -%>
+## Socks outproxy. Example below is set to use Tor for all connections except i2p
+## Uncomment and set to 'true' to enable using of SOCKS outproxy
+<% unless $outproxy_enabled =~ Undef { -%>
+outproxy.enabled = <%= $outproxy_enabled %>
+<% } -%>
+## Address and port of outproxy
+<% unless $outproxy =~ Undef { -%>
+outproxy = <%= $outproxy %>
+<% } -%>
+<% unless $outproxyport =~ Undef { -%>
+outproxyport = <%= $outproxyport %>
+<% } -%>
+## socksproxy section also accepts I2CP parameters, like "inbound.length" etc.
+

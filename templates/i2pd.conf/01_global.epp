@@ -158,43 +158,6 @@ notransit = <%= $notransit %>
 floodfill = <%= $floodfill %>
 <% } -%>
 
-[socksproxy]
-## Uncomment and set to 'false' to disable SOCKS Proxy
-# enabled = true
-## Address and port service will listen on
-address = 127.0.0.1
-port = 4447
-## Optional keys file for proxy local destination
-# keys = socks-proxy-keys.dat
-## Socks outproxy. Example below is set to use Tor for all connections except i2p
-## Uncomment and set to 'true' to enable using of SOCKS outproxy
-# outproxy.enabled = false
-## Address and port of outproxy
-# outproxy = 127.0.0.1
-# outproxyport = 9050
-## socksproxy section also accepts I2CP parameters, like "inbound.length" etc.
-
-[sam]
-## Comment or set to 'false' to disable SAM Bridge
-enabled = true
-## Address and port service will listen on
-# address = 127.0.0.1
-# port = 7656
-
-[bob]
-## Uncomment and set to 'true' to enable BOB command channel
-# enabled = false
-## Address and port service will listen on
-# address = 127.0.0.1
-# port = 2827
-
-[i2cp]
-## Uncomment and set to 'true' to enable I2CP protocol
-# enabled = false
-## Address and port service will listen on
-# address = 127.0.0.1
-# port = 7654
-
 [i2pcontrol]
 ## Uncomment and set to 'true' to enable I2PControl protocol
 # enabled = false

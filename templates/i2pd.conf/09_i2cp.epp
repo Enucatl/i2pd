@@ -1,0 +1,13 @@
+[i2cp]
+## Uncomment and set to 'true' to enable I2CP protocol
+<% unless $enabled =~ Undef { -%>
+enabled = <%= $enabled %>
+<% } -%>
+## Address and port service will listen on
+<% unless $address =~ Undef { -%>
+address = <%= $address %>
+<% } -%>
+<% unless $port =~ Undef { -%>
+port = <%= $port %>
+<% } -%>
+

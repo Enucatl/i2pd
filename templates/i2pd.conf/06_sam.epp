@@ -1,0 +1,13 @@
+[sam]
+## Comment or set to 'false' to disable SAM Bridge
+<% unless $enabled =~ Undef { -%>
+enabled = <%= $enabled %>
+<% } -%>
+## Address and port service will listen on
+<% unless $address =~ Undef { -%>
+address = <%= $address %>
+<% } -%>
+<% unless $port =~ Undef { -%>
+port = <%= $port %>
+<% } -%>
+

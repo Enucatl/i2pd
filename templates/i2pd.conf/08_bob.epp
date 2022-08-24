@@ -1,0 +1,13 @@
+[bob]
+## Uncomment and set to 'true' to enable BOB command channel
+<% unless $enabled =~ Undef { -%>
+enabled = <%= $enabled %>
+<% } -%>
+## Address and port service will listen on
+<% unless $address =~ Undef { -%>
+address = <%= $address %>
+<% } -%>
+<% unless $port =~ Undef { -%>
+port = <%= $port %>
+<% } -%>
+
