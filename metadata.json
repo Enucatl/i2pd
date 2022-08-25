@@ -1,6 +1,6 @@
 {
   "name": "Enucatl-i2pd",
-  "version": "0.1.0",
+  "version": "1.0.5",
   "author": "Enucatl",
   "summary": "Install, configure and run an i2pd daemon.",
   "license": " GPL-3.0-only",
