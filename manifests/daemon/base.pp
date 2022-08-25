@@ -35,13 +35,13 @@ class i2pd::daemon::base (
     notify  => Service['i2pd'],
   }
 
-  concat::fragment { '00.header':
+  concat::fragment { 'i2pd.00.header':
     content => stdlib::deferrable_epp('i2pd/i2pd.conf/00_header.epp', {}),
     order   => '00',
     target  => $config_file,
   }
 
-  concat::fragment { '01.config':
+  concat::fragment { 'i2pd.01.config':
     content => stdlib::deferrable_epp('i2pd/i2pd.conf/01_config.epp', {
       'config'     => $config,
       }),
