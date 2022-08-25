@@ -2,9 +2,11 @@
   "name": "Enucatl-i2pd",
   "version": "0.1.0",
   "author": "Enucatl",
-  "summary": "",
+  "summary": "Install, configure and run an i2pd daemon.",
   "license": " GPL-3.0-only",
-  "source": "",
+  "source": "https://github.com/Enucatl/i2pd",
+  "project_page": "https://github.com/Enucatl/i2pd",
+  "issues_url": "https://github.com/Enucatl/i2pd/issues",
   "dependencies": [
     {
       "name": "puppetlabs/apt",
