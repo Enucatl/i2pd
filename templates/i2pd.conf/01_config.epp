@@ -1,0 +1,11 @@
+<%- | Hash $config | -%>
+
+<% $config.each |$key, $value| { -%>
+<% unless $key == 'global' { -%>
+[<%= $key %>]
+<% } -%>
+<% $value.each |$k, $v| { -%>
+<%= $k %> = <%= $v %>
+<% } -%>
+
+<% } -%>
